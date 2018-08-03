@@ -1,21 +1,21 @@
 body{
-	margin:0px;
+	margin:0px auto;
 	font-family: 'Orbitron', sans-serif;
 }
 #main {
     background-image: url(../images/d2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    height:600px;
+    height:580px;
     background-size: cover;
 }
-@media screen and (min-width: 1300px){
-	#container{
+/*@media screen and (min-width: 1300px){
+	#main{
 		height:100%;
-		width:1300px;
-		margin:0 auto; /*to center the container*/
+		margin:0 auto; to center the container
 	}
 }
+/*
 @media screen and (min-width: 1300px){
 	#header{
 	margin:0px;
@@ -32,6 +32,7 @@ body{
 		height:80px;
 	}
 }
+*/
 /*DROPDOWN MENU*/
 
 .clearfix:after {
@@ -41,21 +42,29 @@ body{
 }
  
 /*----- Menu Outline -----*/
+/*
 .menu-wrap {
     width:100%;
     box-shadow:0px 1px 3px rgba(0,0,0,0.2);
     background:#3e3436; 
 
 }
+*/
+/*
 @media screen and (min-width: 1300px){
 	.menu {
 	    margin:-70px 700px;
 	    width:600px;
 	}
 }
+*/
+
+.menu{
+    float:right;
+}
 
 .menu li {
-    margin:-10px;
+    margin:auto;
     list-style:none;
 
 }
