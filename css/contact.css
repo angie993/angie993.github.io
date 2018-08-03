@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+
+.align-center {
+  text-align: center;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  position: relative;
+
+}
+.row {
+  margin: -20px 0;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row .col {
+  padding: 0 20px;
+  float: left;
+  box-sizing: border-box;
+}
+.row .col.x-50 {
+  width: 50%;
+}
+.row .col.x-100 {
+  width: 100%;
+}
+.content-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+.get-in-touch {
+  max-width: 650px;
+  margin-top:-150px;
+  margin-left:350px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.get-in-touch .title {
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 36px;
+  line-height: 48px;
+  padding-bottom: 48px;
+}
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+
+}
+.contact-form .input-text:focus {
+  outline: none;
+
+}
+.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+  -webkit-transform: translateY(-24px);
+  transform: translateY(-24px);
+
+}
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #888;
+  cursor: text;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+.note {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: Lusitana, serif;
+  font-size: 16px;
+  line-height: 21px;
+}
+.note .link {
+  color: #888;
+  text-decoration: none;
+}
+.note .link:hover {
+  text-decoration: underline;
+}
+.logo{
+  margin-top: 10px;
+  width:150px;
+  height: 75px;
+}
+
+/*MENU*/
+#portfolio{
+  margin-left:30px;
+  margin-top: 70px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Orbitron' !important;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*FOOTER*/
+footer{
+  width:100%;
+  height:60px;
+  background-color: #242020 !important;
+}
+.col-md-12{
+  padding-top: 5px;
+  padding-left: 20px;
+}
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left:0 !important;
+  padding: 0;
+}
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+
+}
+
+
+/* footer social icons */
+.social-network a.icoInstagram:hover {
+  background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3B5998;
+}
+.social-network a.icoGoogle:hover {
+  background-color:#BD3518;
+}
+.social-network a.icoLinkedin:hover {
+  background-color:#007bb7;
+}
+.social-network a.icoInstagram:hover i, .social-network a.icoFacebook:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoLinkedin:hover i {
+  color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+
+.social-circle li a {
+  display:inline-block;
+  position:relative;
+  margin:0 auto 0 auto;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  text-align:center;
+  width: 50px;
+  height: 50px;
+  font-size:20px;
+}
+.social-circle li i {
+  margin:0;
+  line-height:50px;
+  text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+footer a {
+ background-color: black;   
+}
+footer .col-md-12 .copyright{
+  text-decoration: none;
+  float:right;
+  margin:15px 50px;
+  background: none;
+  color:#504B4B;
+  text-shadow: 1px 1px 1px #000000;
+}
+#head{
+  height:100%;
+  background-image: url(../images/contact1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container h1{
+  text-align:center;
+}
